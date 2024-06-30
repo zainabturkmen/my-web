@@ -109,13 +109,11 @@ const Wrapper = styled.header`
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 0.9em;
-        transition: transform 0.4s ease-in-out;
       }
 
       a:hover {
         color: var(--clr-accent);
         transition: all 0.3s linear;
-        transform: scale(1.1);
       }
     }
   }
