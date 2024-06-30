@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ServicesData } from "../components/data";
 import backImage from "../assets/backImage.png";
-// import webImage from "../assets/web-iamge.jpeg"
-// import webImage4 from "../assets/web-imagee4.jpeg"
-// import webImage2 from "../assets/web-image2.jpeg"
-// import webImage3 from "../assets/web-image3.jpeg"
-// import webImage5 from "../assets/web-image5.jpeg"
+
 const Services = () => {
   return (
     <ServicesSection id="Services">
