@@ -66,6 +66,7 @@ const ServicesSection = styled.section`
   .service {
     max-width: 500px;
     margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
   }
 
   .btn {
@@ -80,6 +81,12 @@ const ServicesSection = styled.section`
     margin-top: 2em;
     letter-spacing: 2px;
     font-weight: bold;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .btn:hover,
+  .service:hover {
+    transform: scale(1.1);
   }
 
   @media screen and (min-width: 800px) {

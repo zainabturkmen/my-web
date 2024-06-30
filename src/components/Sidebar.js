@@ -91,6 +91,7 @@ const SidebarContainer = styled.div`
   .links a:hover {
     padding-left: 1rem;
     color: var(--clr-accent);
+    transform: scale(1.1);
   }
 
   @media screen and (min-width: 700px) {
