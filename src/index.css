@@ -27,14 +27,10 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-/* @media (min-width: 800px) {
-  :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
-  }
-} */
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
 
 /* General styles */
 
@@ -47,11 +43,6 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
-
-/* img {
-  display: block;
-  max-width: 60%;
-} */
 
 /* Typography */
 
@@ -72,8 +63,3 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-/* @media (max-width: 680px) {
-    .navbar{
-        display: flex;
-    }
-} */
