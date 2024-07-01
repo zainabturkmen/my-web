@@ -5,9 +5,13 @@ import styled from "styled-components";
 const Home = () => {
   return (
     <HomeSection id="home">
-      <h1 class="section__title">
-        Hi, I am <strong>Zainab Turkmen</strong>
-      </h1>
+      <div className="title">
+        <p>Hi it's me!</p>
+        <h2 class="section__title">Zainab Turkmen</h2>
+        <div className="dynamic-text">
+          <h3 class="section__title"> I am a</h3>
+        </div>
+      </div>
       <p class="section__subtitle">front-end dev</p>
       <img src={image} alt="a picture of Zainab Turkmen" class="intro__img" />
     </HomeSection>
@@ -17,16 +21,6 @@ const Home = () => {
 const HomeSection = styled.section`
   position: relative;
   padding: 5em 2em;
-  h1 {
-    margin-bottom: 0.25em;
-    font-weight: var(--fw-reg);
-    font-size: 2.5rem;
-
-    strong {
-      display: block;
-      font-weight: var(--fw-bold);
-    }
-  }
 
   .section__subtitle {
     background-color: var(--clr-accent);
