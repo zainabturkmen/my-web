@@ -32,7 +32,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
           })}
         </ul>
         <div className="footer-links">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/zainab-turkmen-719183271/">
             <FaLinkedin />
           </a>
 
