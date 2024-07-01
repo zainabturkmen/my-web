@@ -131,6 +131,11 @@ const SidebarContainer = styled.div`
     gap: 2em;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1em;
+    a {
+      color: var(--clr-accent);
+      font-size: 1.3em;
+    }
   }
 
   @media screen and (min-width: 700px) {
