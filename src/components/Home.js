@@ -1,16 +1,26 @@
 import React from "react";
 import image from "../assets/devImage.png";
 import styled from "styled-components";
+import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
+  const [typeEffect] = useTypewriter({
+    words: ["Web Developer", "Web designer", "React.js developer"],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 90,
+  });
   return (
     <HomeSection id="home">
       <div className="title">
         <p>Hi it's me!</p>
         <h2 class="section__title">Zainab Turkmen</h2>
-        <div className="dynamic-text">
-          <h3 class="section__title"> I am a</h3>
-        </div>
+        <h3>
+          I am a <span>{typeEffect}</span>
+          <span style={{ fontSize: "1em", color: "black" }}>
+            <Cursor />
+          </span>
+        </h3>
       </div>
       <p class="section__subtitle">front-end dev</p>
       <img src={image} alt="a picture of Zainab Turkmen" class="intro__img" />
@@ -21,6 +31,32 @@ const Home = () => {
 const HomeSection = styled.section`
   position: relative;
   padding: 5em 2em;
+
+  P {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0.6em 0 0.8em 0;
+    span {
+      color: var(--clr-accent);
+      font-weight: bold;
+    }
+  }
+
+  .Cursor {
+    color: #0000;
+  }
 
   .section__subtitle {
     background-color: var(--clr-accent);
@@ -49,6 +85,13 @@ const HomeSection = styled.section`
       "img subtitle";
     grid-template-columns: min-content max-content;
 
+    h2{
+      font-size: 2.5em;
+    }
+
+    h3{
+      font-size: 1.5em;
+    }
     img {
       grid-area: img;
       min-width: 220px;
@@ -56,10 +99,6 @@ const HomeSection = styled.section`
       z-index: 2;
     }
 
-    h1 {
-      margin-top: 1.2em;
-      font-size: 3rem;
-    }
     .section__subtitle {
       align-self: start;
       grid-column: -1 / 1;

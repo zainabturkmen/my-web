@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import links from "./data";
 
 const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
@@ -16,9 +17,16 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <a href={url} onClick={closeSidebar}>
+                <Link
+                  to={url}
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={closeSidebar}
+                >
                   {text}
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -86,6 +94,7 @@ const SidebarContainer = styled.div`
     text-decoration: none;
     color: #000;
     font-weight: bolder;
+    cursor: pointer;
   }
 
   .links a:hover {

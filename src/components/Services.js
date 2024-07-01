@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { ServicesData } from "../components/data";
+import { Link } from "react-scroll";
+
 import backImage from "../assets/backImage.png";
 
 const Services = () => {
@@ -16,9 +18,16 @@ const Services = () => {
         ))}
       </div>
 
-      <a href="#work" class="btn">
+      <Link
+        to="work"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+        class="btn"
+      >
         My Work
-      </a>
+      </Link>
     </ServicesSection>
   );
 };

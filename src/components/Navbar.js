@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 import Sidebar from "./Sidebar";
 import links from "./data";
 
@@ -34,7 +35,15 @@ const Navbar = () => {
               const { id, text, url } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <Link
+                    to={url}
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    {text}
+                  </Link>
                 </li>
               );
             })}
@@ -82,6 +91,9 @@ const Wrapper = styled.header`
 
   @media (min-width: 700px) {
     .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
       padding: 0 5em;
       display: flex;
       align-items: center;
@@ -109,6 +121,7 @@ const Wrapper = styled.header`
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 0.9em;
+        cursor: pointer;
       }
 
       a:hover {

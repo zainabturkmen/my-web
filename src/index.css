@@ -41,7 +41,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 /* Typography */
