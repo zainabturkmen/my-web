@@ -32,7 +32,7 @@ const Navbar = () => {
           </button>
           <ul className="links">
             {links.map((link) => {
-              const { id, text, url } = link;
+              const { id, text, url, icon } = link;
               return (
                 <li key={id}>
                   <Link

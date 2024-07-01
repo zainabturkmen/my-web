@@ -1,30 +1,42 @@
 import React from "react";
+import {
+  FaHome,
+  FaServer,
+  FaPen,
+  FaFileContract,
+  FaMobile,
+} from "react-icons/fa";
 
 const links = [
   {
     id: 1,
     text: "home",
     url: "home",
+    icon: <FaHome />,
   },
   {
     id: 2,
     text: "Services",
     url: "Services",
+    icon: <FaServer />,
   },
   {
     id: 3,
     text: "about",
     url: "about",
+    icon: <FaFileContract />,
   },
   {
     id: 4,
     text: "work",
     url: "work",
+    icon: <FaPen />,
   },
   {
     id: 5,
     text: "contact",
     url: "contact",
+    icon: <FaMobile />,
   },
 ];
 

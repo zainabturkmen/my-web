@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 import links from "./data";
@@ -9,12 +9,12 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
   return (
     <SidebarContainer>
       <aside className={`sidebar ${isSidebarOpen && "show-sidebar"}`}>
-        <button type="button" className="close-btn" onClick={closeSidebar}>
-          <FaTimes />
-        </button>
         <ul className="links">
+          <button type="button" className="close-btn" onClick={closeSidebar}>
+            <FaTimes />
+          </button>
           {links.map((link) => {
-            const { id, text, url } = link;
+            const { id, text, url, icon } = link;
             return (
               <li key={id}>
                 <Link
@@ -25,12 +25,29 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
                   duration={500}
                   onClick={closeSidebar}
                 >
-                  {text}
+                  <span>{icon}</span> {text}
                 </Link>
               </li>
             );
           })}
         </ul>
+        <div>
+          <li>
+            <a href="#">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/ZainabTurkmen">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/zainabturkmen">
+              <FaGithub />
+            </a>
+          </li>
+        </div>
       </aside>
     </SidebarContainer>
   );
@@ -41,7 +58,7 @@ const SidebarContainer = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 55%;
     height: 100%;
     z-index: 1;
     background: white;
@@ -64,12 +81,13 @@ const SidebarContainer = styled.div`
     color: #000;
     transition: all 0.3s linear;
     cursor: pointer;
-    padding: 0.5em 1.5em;
+    margin-left: -.3em;
   }
 
   .close-btn:hover {
     color: var(--clr-accent);
   }
+
   .logo {
     justify-self: center;
     width: 5em;
@@ -79,6 +97,7 @@ const SidebarContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2em;
+    align-items: flex-start;
 
     li {
       list-style-type: none;
@@ -95,6 +114,11 @@ const SidebarContainer = styled.div`
     color: #000;
     font-weight: bolder;
     cursor: pointer;
+    padding-top: -1em;
+  }
+
+  span {
+    margin-right: 0.7em;
   }
 
   .links a:hover {

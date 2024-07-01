@@ -27,11 +27,6 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-:focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
-}
-
 /* General styles */
 
 body {
