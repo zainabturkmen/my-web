@@ -39,7 +39,7 @@ const Navbar = () => {
                     to={url}
                     spy={true}
                     smooth={true}
-                    offset={50}
+                    offset={-100}
                     duration={500}
                   >
                     {text}
@@ -91,9 +91,6 @@ const Wrapper = styled.header`
 
   @media (min-width: 700px) {
     .navbar {
-      position: fixed;
-      width: 100%;
-      z-index: 1;
       padding: 0 5em;
       display: flex;
       align-items: center;
@@ -125,6 +122,11 @@ const Wrapper = styled.header`
       }
 
       a:hover {
+        color: var(--clr-accent);
+        transition: all 0.3s linear;
+      }
+
+      li {
         color: var(--clr-accent);
         transition: all 0.3s linear;
       }

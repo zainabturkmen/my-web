@@ -21,7 +21,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
                   to={url}
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={30}
                   duration={500}
                   onClick={closeSidebar}
                 >

@@ -22,7 +22,7 @@ const Services = () => {
         to="work"
         spy={true}
         smooth={true}
-        offset={50}
+        offset={-100}
         duration={500}
         class="btn"
       >
