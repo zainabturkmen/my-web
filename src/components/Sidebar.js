@@ -31,22 +31,18 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
             );
           })}
         </ul>
-        <div>
-          <li>
-            <a href="#">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/ZainabTurkmen">
-              <FaTwitter />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/zainabturkmen">
-              <FaGithub />
-            </a>
-          </li>
+        <div className="footer-links">
+          <a href="#">
+            <FaLinkedin />
+          </a>
+
+          <a href="https://x.com/ZainabTurkmen">
+            <FaTwitter />
+          </a>
+
+          <a href="https://github.com/zainabturkmen">
+            <FaGithub />
+          </a>
         </div>
       </aside>
     </SidebarContainer>
@@ -55,6 +51,8 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
 
 const SidebarContainer = styled.div`
   .sidebar {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
@@ -65,6 +63,7 @@ const SidebarContainer = styled.div`
     transform: translate(-100%);
     transition: all 0.3s linear;
     box-shadow: var(--bs);
+    justify-content: space-between;
   }
 
   .show-sidebar {
@@ -81,7 +80,7 @@ const SidebarContainer = styled.div`
     color: #000;
     transition: all 0.3s linear;
     cursor: pointer;
-    margin-left: -.3em;
+    margin-left: -0.3em;
   }
 
   .close-btn:hover {
@@ -125,6 +124,13 @@ const SidebarContainer = styled.div`
     padding-left: 1rem;
     color: var(--clr-accent);
     transform: scale(1.1);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (min-width: 700px) {
