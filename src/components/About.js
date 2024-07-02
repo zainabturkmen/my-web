@@ -27,6 +27,7 @@ const About = () => {
         <img src={image} alt="person's image" />
       </div>
       <section className="skills-section">
+        <h2>Skills</h2>
         <div className="scroller">
           <ul>
             <li>HTML</li>
