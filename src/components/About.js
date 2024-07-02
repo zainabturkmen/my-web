@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/devImage.png";
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+import Marquee from "react-fast-marquee";
 
 const About = () => {
   return (
@@ -27,21 +28,23 @@ const About = () => {
         <img src={image} alt="person's image" />
       </div>
       <section className="skills-section">
-        <h2>Skills</h2>
+        <h2 className="skills">Skills</h2>
         <div className="scroller">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>APIs</li>
-            <li>Styled components</li>
-            <li>Animation CSS</li>
-            <li>Responsive Web Design</li>
-            <li>UI/UX Design</li>
-            <li>Figma</li>
-            <li>Git and Github</li>
-          </ul>
+          <Marquee>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>APIs</li>
+              <li>Styled components</li>
+              <li>Animation CSS</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX Design</li>
+              <li>Figma</li>
+              <li>Git and Github</li>
+            </ul>
+          </Marquee>
         </div>
       </section>
     </AboutSection>
@@ -73,6 +76,10 @@ const AboutSection = styled.section`
     text-transform: capitalize;
   }
 
+  .skills{
+    text-align: center;
+  } 
+  
   .scroller {
     max-width: 900px;
     margin: 0 auto;
@@ -80,11 +87,11 @@ const AboutSection = styled.section`
     text-align: center;
     ul {
       display: flex;
-      /* flex-direction: column; */
       justify-content: center;
       align-items: center;
       gap: 1em;
-      border: 1px solid red;
+      padding-block: 1rem;
+      flex-wrap: wrap;
     }
 
     li {
