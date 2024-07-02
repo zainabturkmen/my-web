@@ -1,9 +1,10 @@
 import React from "react";
 import image from "../assets/devImage.png";
+import styled from "styled-components";
 
 const About = () => {
   return (
-    <section class="about-me" id="about">
+    <AboutSection class="about-me" id="about">
       <h2 class="about-title">Who I am</h2>
       <p class="about-subtitle">Designer & developer based out of NYC</p>
 
@@ -23,8 +24,12 @@ const About = () => {
       </div>
 
       <img src={image} alt="person's image" />
-    </section>
+    </AboutSection>
   );
 };
+
+const AboutSection = styled.section`
+  background-color: red;
+`;
 
 export default About;
