@@ -30,7 +30,7 @@ const About = () => {
 
 const AboutSection = styled.section`
   padding: 5em 2em;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 
@@ -49,6 +49,11 @@ const AboutSection = styled.section`
     padding: 0.25em 0.5em;
     letter-spacing: 2px;
     text-transform: capitalize;
+  }
+
+  @media (min-width: 750px) {
+    text-align: start;
+    
   }
 `;
 
