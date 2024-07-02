@@ -54,7 +54,7 @@ const AboutSection = styled.section`
   @media (min-width: 700px) {
     text-align: start;
     display: grid;
-    gap: 1em;
+    /* gap: 1em; */
     grid-template-columns: 1fr 200px;
     grid-template-areas:
       "title img"
