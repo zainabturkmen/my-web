@@ -29,6 +29,12 @@ const About = () => {
       </div>
       <section className="skills-section">
         <h2 className="skills">Skills</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
         <div className="scroller">
           <Marquee autoFill pauseOnClick>
             <ul className="first-marquee">
@@ -95,12 +101,16 @@ const AboutSection = styled.section`
     text-align: center;
   }
 
-  .scroller {
-    max-width: 1040px;
-    margin: 0 auto;
+  .skills-section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 0 3em;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
 
+  .scroller {
     ul {
       display: flex;
       justify-content: center;
@@ -154,6 +164,13 @@ const AboutSection = styled.section`
         position: relative;
         z-index: 2;
         /* object-fit: cover; */
+      }
+
+      .skills-section {
+        h2,
+        p {
+          text-align: start;
+        }
       }
     }
   }
