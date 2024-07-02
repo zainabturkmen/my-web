@@ -102,8 +102,8 @@ const AboutSection = styled.section`
   }
 
   .skills-section {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     text-align: center;
     padding: 0 3em;
     max-width: 1040px;
