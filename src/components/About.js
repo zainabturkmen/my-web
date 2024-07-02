@@ -10,7 +10,6 @@ const About = () => {
         <p class="about-subtitle">
           Designer & developer based out of Afghanistan
         </p>
-
         <div class="about-me-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -25,9 +24,9 @@ const About = () => {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-
         <img src={image} alt="person's image" />
       </div>
+      
     </AboutSection>
   );
 };
