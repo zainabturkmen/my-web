@@ -76,15 +76,16 @@ const AboutSection = styled.section`
     text-transform: capitalize;
   }
 
-  .skills{
+  .skills {
     text-align: center;
-  } 
-  
+  }
+
   .scroller {
     max-width: 1040px;
     margin: 0 auto;
     padding: 2em;
     text-align: center;
+    padding: 0 3em;
     ul {
       display: flex;
       justify-content: center;
@@ -100,11 +101,15 @@ const AboutSection = styled.section`
       padding: 1em;
       border-radius: 5px;
       font-size: 1em;
+      font-weight: 600;
+      color: white;
+      background-color: var(--clr-dark);
     }
   }
 
   @media (min-width: 700px) {
     .about-me {
+      padding: 5em 3em;
       text-align: start;
       display: grid;
       grid-template-columns: 1fr 200px;
@@ -117,6 +122,7 @@ const AboutSection = styled.section`
         grid-area: title;
       }
       .about-subtitle {
+        margin-top: 0.5em;
         grid-column: 1 /-1;
         grid-row: 2;
         position: relative;
