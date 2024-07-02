@@ -74,6 +74,9 @@ const AboutSection = styled.section`
   }
 
   .scroller {
+    li{
+        list-style-type: none;
+    }
   }
 
   @media (min-width: 700px) {
