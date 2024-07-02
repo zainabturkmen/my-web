@@ -27,7 +27,8 @@ const About = () => {
         <img src={image} alt="person's image" />
       </div>
       <section className="skills-section">
-
+        <div className=""></div>
+        
       </section>
     </AboutSection>
   );
