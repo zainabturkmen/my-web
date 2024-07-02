@@ -29,7 +29,26 @@ const About = () => {
 };
 
 const AboutSection = styled.section`
-  background-color: red;
+  padding: 5em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  img {
+    display: block;
+    max-width: 100%;
+    box-shadow: var(--bs);
+  }
+
+  .about-subtitle {
+    background-color: var(--clr-accent);
+    margin: 0;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
 `;
 
 export default About;
