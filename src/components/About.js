@@ -30,7 +30,7 @@ const About = () => {
       <section className="skills-section">
         <h2 className="skills">Skills</h2>
         <div className="scroller">
-          <Marquee autoFill>
+          <Marquee autoFill pauseOnClick>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -45,7 +45,7 @@ const About = () => {
               <li>Git and Github</li>
             </ul>
           </Marquee>
-          {/* <Marquee to="right">
+          <Marquee direction="right" pauseOnClick autoFill autoFill>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -59,7 +59,7 @@ const About = () => {
               <li>Figma</li>
               <li>Git and Github</li>
             </ul>
-          </Marquee> */}
+          </Marquee>
         </div>
       </section>
     </AboutSection>
