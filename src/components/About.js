@@ -31,7 +31,7 @@ const About = () => {
         <h2 className="skills">Skills</h2>
         <div className="scroller">
           <Marquee autoFill pauseOnClick>
-            <ul>
+            <ul className="first-marquee">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -100,6 +100,7 @@ const AboutSection = styled.section`
     margin: 0 auto;
     text-align: center;
     padding: 0 3em;
+
     ul {
       display: flex;
       justify-content: center;
@@ -107,6 +108,7 @@ const AboutSection = styled.section`
       gap: 1em;
       padding-block: 1rem;
       flex-wrap: wrap;
+      margin: 0;
     }
 
     li {
