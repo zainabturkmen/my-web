@@ -5,34 +5,40 @@ import styled from "styled-components";
 const About = () => {
   return (
     <AboutSection class="about-me" id="about">
-      <h2 class="about-title">Who I am</h2>
-      <p class="about-subtitle">Designer & developer based out of Afghanistan</p>
+      <div className="about-me">
+        <h2 class="about-title">Who I am</h2>
+        <p class="about-subtitle">
+          Designer & developer based out of Afghanistan
+        </p>
 
-      <div class="about-me">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <div class="about-me">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <img src={image} alt="person's image" />
       </div>
-
-      <img src={image} alt="person's image" />
     </AboutSection>
   );
 };
 
 const AboutSection = styled.section`
-  padding: 5em 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  .about-me {
+    padding: 5em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   img {
     display: block;
@@ -52,31 +58,33 @@ const AboutSection = styled.section`
   }
 
   @media (min-width: 700px) {
-    text-align: start;
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
-
-    .about-title {
-      grid-area: title;
-    }
-    .about-subtitle {
-      grid-column: 1 /-1;
-      grid-row: 2;
-      position: relative;
-      left: -1em;
-      width: calc(100% + 2em);
-      padding-left: 1em;
-      padding-right: calc(200px + 4em);
-    }
-    img {
-      grid-area: img;
-      position: relative;
-      z-index: 2;
+    .about-me {
+      text-align: start;
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+      grid-column-gap: 2em;
+      .about-title {
+        grid-area: title;
+      }
+      .about-subtitle {
+        grid-column: 1 /-1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+      }
+      
+      img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+      }
     }
   }
 `;
