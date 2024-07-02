@@ -57,16 +57,19 @@ const AboutSection = styled.section`
     gap: 1em;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
-      "img title"
-      "img subtitle";
+      "title img"
+      "subtitle img"
+      "text img";
 
-    .about-title,
-    .about-subtitle{
-        grid-column: 1;
+    .about-title{
+        grid-area: title;
     }
-     img {
+    .about-subtitle {
+      grid-column: 1;
+    }
+    img {
       grid-row: 1/-1;
-      grid-column: 2/2;
+      grid-column: 2;
     }
   }
 `;
