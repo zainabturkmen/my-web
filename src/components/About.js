@@ -26,7 +26,9 @@ const About = () => {
         </div>
         <img src={image} alt="person's image" />
       </div>
-      
+      <section className="skills-section">
+
+      </section>
     </AboutSection>
   );
 };
