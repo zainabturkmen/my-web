@@ -74,8 +74,25 @@ const AboutSection = styled.section`
   }
 
   .scroller {
-    li{
-        list-style-type: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    ul {
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      border: 1px solid red;
+    }
+
+    li {
+      list-style-type: none;
+      box-shadow: var(--bs);
+      padding: 1em;
+      border-radius: 5px;
+      font-size: 1em;
     }
   }
 
@@ -108,10 +125,6 @@ const AboutSection = styled.section`
         z-index: 2;
         /* object-fit: cover; */
       }
-    }
-
-    .skills-section {
-      max-width: 900px;
     }
   }
 `;
