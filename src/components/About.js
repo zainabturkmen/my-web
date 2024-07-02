@@ -45,7 +45,7 @@ const About = () => {
               <li>Git and Github</li>
             </ul>
           </Marquee>
-          <Marquee direction="right" pauseOnClick autoFill autoFill>
+          <Marquee direction="right" pauseOnClick autoFill>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
