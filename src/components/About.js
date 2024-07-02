@@ -4,14 +4,14 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <AboutSection class="about-me" id="about">
-      <div className="about-me">
+    <AboutSection>
+      <div className="about-me" id="about">
         <h2 class="about-title">Who I am</h2>
         <p class="about-subtitle">
           Designer & developer based out of Afghanistan
         </p>
 
-        <div class="about-me">
+        <div class="about-me-text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -79,7 +79,7 @@ const AboutSection = styled.section`
         padding-left: 1em;
         padding-right: calc(200px + 4em);
       }
-      
+
       img {
         grid-area: img;
         position: relative;
