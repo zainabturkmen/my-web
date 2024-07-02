@@ -40,7 +40,7 @@ const Navbar = () => {
                     to={url}
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={10}
                     duration={500}
                   >
                     {text}

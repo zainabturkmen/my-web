@@ -1,14 +1,13 @@
 import React from "react";
+import image from "../assets/devImage.png";
 
 const About = () => {
   return (
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer & developer based out of NYC
-      </p>
+      <h2 class="about-title">Who I am</h2>
+      <p class="about-subtitle">Designer & developer based out of NYC</p>
 
-      <div class="about-me__body">
+      <div class="about-me">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -23,7 +22,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus"> */}
+      <img src={image} alt="person's image" />
     </section>
   );
 };
