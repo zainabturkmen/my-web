@@ -66,7 +66,6 @@ const AboutSection = styled.section`
   }
 
   .about-subtitle {
-    /* color: white; */
     background-color: var(--clr-accent);
     margin: 0;
     font-size: var(--fs-h3);
@@ -101,11 +100,12 @@ const AboutSection = styled.section`
       box-shadow: var(--bs);
       padding: 1em;
       border-radius: 5px;
-      font-size: 1em;
-      font-weight: 600;
-      /* color: white; */
+      font-size: 1.1em;
+      /* font-weight: 600; */
+      color: #000;
       background-color: var(--clr-accent);
       letter-spacing: 2px;
+      text-transform: capitalize;
     }
   }
 
