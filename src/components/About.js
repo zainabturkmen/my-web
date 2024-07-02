@@ -45,7 +45,7 @@ const AboutSection = styled.section`
     margin: 0;
     font-size: var(--fs-h3);
     font-family: var(--ff-secondary);
-    margin: 1em;
+    margin: 1.5em 0 0 0;
     padding: 0.25em 0.5em;
     letter-spacing: 2px;
     text-transform: capitalize;
