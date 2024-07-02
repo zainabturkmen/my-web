@@ -51,9 +51,23 @@ const AboutSection = styled.section`
     text-transform: capitalize;
   }
 
-  @media (min-width: 750px) {
+  @media (min-width: 700px) {
     text-align: start;
-    
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+
+    .about-title,
+    .about-subtitle{
+        grid-column: 1;
+    }
+     img {
+      grid-row: 1/-1;
+      grid-column: 2/2;
+    }
   }
 `;
 
