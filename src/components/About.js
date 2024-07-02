@@ -54,19 +54,20 @@ const AboutSection = styled.section`
   @media (min-width: 700px) {
     text-align: start;
     display: grid;
-    /* gap: 1em; */
     grid-template-columns: 1fr 200px;
     grid-template-areas:
       "title img"
       "subtitle img"
       "text img";
+    grid-column-gap:2em;
 
     .about-title{
         grid-area: title;
     }
     .about-subtitle {
-      grid-column: 1;
-    }
+      grid-column: 1 /-1;
+      grid-row: 2;
+    } 
     img {
       grid-area: img;
 
