@@ -67,9 +67,16 @@ const AboutSection = styled.section`
     .about-subtitle {
       grid-column: 1 /-1;
       grid-row: 2;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 2em);
+      padding-left: 1em;
+      padding-right: calc(200px + 4em);
     }
     img {
       grid-area: img;
+      position: relative;
+      z-index: 2;
     }
   }
 `;
