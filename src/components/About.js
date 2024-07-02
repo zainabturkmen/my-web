@@ -115,7 +115,6 @@ const AboutSection = styled.section`
       padding: 0.5em 1em;
       border-radius: 5px;
       font-size: 1.1em;
-      /* font-weight: 600; */
       color: #000;
       background-color: var(--clr-accent);
       letter-spacing: 2px;
