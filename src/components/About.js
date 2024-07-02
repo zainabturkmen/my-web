@@ -98,7 +98,7 @@ const AboutSection = styled.section`
   .scroller {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 2em;
+    /* padding: 2em; */
     text-align: center;
     padding: 0 3em;
     ul {
