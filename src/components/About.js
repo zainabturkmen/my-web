@@ -27,8 +27,21 @@ const About = () => {
         <img src={image} alt="person's image" />
       </div>
       <section className="skills-section">
-        <div className=""></div>
-        
+        <div className="scroller">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>APIs</li>
+            <li>Styled components</li>
+            <li>Animation CSS</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design</li>
+            <li>Figma</li>
+            <li>Git and Github</li>
+          </ul>
+        </div>
       </section>
     </AboutSection>
   );
@@ -57,6 +70,9 @@ const AboutSection = styled.section`
     padding: 0.25em 0.5em;
     letter-spacing: 2px;
     text-transform: capitalize;
+  }
+
+  .scroller {
   }
 
   @media (min-width: 700px) {
@@ -88,6 +104,10 @@ const AboutSection = styled.section`
         z-index: 2;
         /* object-fit: cover; */
       }
+    }
+
+    .skills-section {
+      max-width: 900px;
     }
   }
 `;
