@@ -97,17 +97,14 @@ const AboutSection = styled.section`
     text-transform: capitalize;
   }
 
-  .skills {
-    text-align: center;
-  }
-
   .skills-section {
-    /* display: flex; */
-    /* flex-direction: column; */
-    text-align: center;
     padding: 0 3em;
     max-width: 1040px;
     margin: 0 auto;
+  }
+
+  .title-class {
+    text-align: center;
   }
 
   .scroller {
@@ -171,6 +168,13 @@ const AboutSection = styled.section`
         p {
           text-align: start;
         }
+      }
+    }
+
+    .skills-section {
+      h2,
+      p {
+        text-align: start;
       }
     }
   }
