@@ -36,6 +36,7 @@ const Navbar = () => {
               return (
                 <li key={id}>
                   <Link
+                    activeClass="active"
                     to={url}
                     spy={true}
                     smooth={true}
@@ -122,6 +123,11 @@ const Wrapper = styled.header`
       }
 
       a:hover {
+        color: var(--clr-accent);
+        transition: all 0.3s linear;
+      }
+
+      a.active {
         color: var(--clr-accent);
         transition: all 0.3s linear;
       }
