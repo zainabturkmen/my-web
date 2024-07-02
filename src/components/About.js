@@ -30,7 +30,7 @@ const About = () => {
       <section className="skills-section">
         <h2 className="skills">Skills</h2>
         <div className="scroller">
-          <Marquee>
+          <Marquee autoFill>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -45,6 +45,21 @@ const About = () => {
               <li>Git and Github</li>
             </ul>
           </Marquee>
+          {/* <Marquee to="right">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>APIs</li>
+              <li>Styled components</li>
+              <li>Animation CSS</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX Design</li>
+              <li>Figma</li>
+              <li>Git and Github</li>
+            </ul>
+          </Marquee> */}
         </div>
       </section>
     </AboutSection>
@@ -98,7 +113,7 @@ const AboutSection = styled.section`
     li {
       list-style-type: none;
       box-shadow: var(--bs);
-      padding: 1em;
+      padding: 0.5em 1em;
       border-radius: 5px;
       font-size: 1.1em;
       /* font-weight: 600; */
