@@ -160,7 +160,6 @@ const AboutSection = styled.section`
         grid-area: img;
         position: relative;
         z-index: 2;
-        /* object-fit: cover; */
       }
 
       .skills-section {
