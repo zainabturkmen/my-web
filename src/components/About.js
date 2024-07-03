@@ -51,21 +51,6 @@ const About = () => {
               <li>Git and Github</li>
             </ul>
           </Marquee>
-          <Marquee direction="right" pauseOnClick autoFill>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>APIs</li>
-              <li>Styled components</li>
-              <li>Animation CSS</li>
-              <li>Responsive Web Design</li>
-              <li>UI/UX Design</li>
-              <li>Figma</li>
-              <li>Git and Github</li>
-            </ul>
-          </Marquee>
         </div>
       </section>
     </AboutSection>
