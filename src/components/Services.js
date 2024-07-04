@@ -24,8 +24,7 @@ const Services = () => {
         smooth={true}
         offset={-100}
         duration={500}
-        class="btn"
-      >
+        class="btn">
         My Work
       </Link>
     </ServicesSection>
@@ -94,8 +93,12 @@ const ServicesSection = styled.section`
     transform: scale(1.1);
   }
 
+  .btn:hover {
+    background-color: var(--hover-color);
+ }
+
   @media screen and (min-width: 800px) {
-    .services {
+    .services {                                                                                                                                                       
       display: flex;
       flex-direction: row;
       max-width: 1000px;

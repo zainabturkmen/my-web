@@ -28,8 +28,8 @@ const links = [
   },
   {
     id: 4,
-    text: "work",
-    url: "work",
+    text: "projects",
+    url: "projects",
     icon: <FaPen />,
   },
   {

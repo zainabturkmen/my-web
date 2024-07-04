@@ -82,6 +82,7 @@ const AboutSection = styled.section`
 
   button:hover {
     transform: scale(1.1);
+    background-color: var(--hover-color);
   }
 
   .skills-section {

@@ -63,12 +63,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1130px;
   margin: auto;
   padding: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: linear-gradient(135deg, #f6f9fc, #e9ecef);
+  margin-top: 5em;
 
   @media (max-width: 768px) {
     padding: 15px;
@@ -79,6 +80,7 @@ const Wrapper = styled.div`
     margin-bottom: 20px;
     color: #333;
     text-align: center;
+    font-weight: bold;
 
     @media (max-width: 768px) {
       font-size: 24px;
@@ -89,7 +91,6 @@ const Wrapper = styled.div`
   .content {
     display: flex;
     width: 100%;
-    gap: 20px;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -109,6 +110,7 @@ const Wrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -1em;
 
       img {
         width: 100%;
@@ -156,7 +158,7 @@ const Wrapper = styled.div`
           transition: background-color 0.3s;
 
           &:hover {
-            background-color: #0056b3;
+            background-color: var(--hover-color);
           }
 
           @media (max-width: 768px) {
