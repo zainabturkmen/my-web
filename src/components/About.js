@@ -22,6 +22,8 @@ const About = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
+            <br />
+            <button>Download CV</button>
           </p>
         </div>
         <img src={image} alt="person's image" />
@@ -29,7 +31,7 @@ const About = () => {
       <section className="skills-section">
         <h2 className="skills">Skills & Tools</h2>
         <div className="scroller">
-            <Images />
+          <Images />
         </div>
       </section>
     </AboutSection>
@@ -61,11 +63,16 @@ const AboutSection = styled.section`
     text-transform: capitalize;
   }
 
+  button{
+    
+  } 
+  
   .skills-section {
     padding: 0 3em;
     max-width: 1090px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 2em;
   }
 
   .title-class {
@@ -77,11 +84,10 @@ const AboutSection = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: 3em;
-      row-gap: 1.5em;
+      gap: 0.3em;
       padding-block: 1rem;
       flex-wrap: wrap;
-      margin-top: 1em;
+      margin-top: 2em;
     }
     .skill-logo {
       height: 5.5em;
