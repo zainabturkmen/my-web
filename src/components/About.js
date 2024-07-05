@@ -1,6 +1,8 @@
 import React from "react";
 import image from "../assets/devImage.png";
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
+// import { FaHtml5 } from "react-icons/fa";
+import reactLogo from "../assets/react-logo.svg"
 import Marquee from "react-fast-marquee";
 
 const About = () => {
@@ -28,29 +30,15 @@ const About = () => {
         <img src={image} alt="person's image" />
       </div>
       <section className="skills-section">
-        <h2 className="skills">Skills</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <h2 className="skills">Skills & Tools</h2>
         <div className="scroller">
-          <Marquee autoFill pauseOnClick>
-            <ul className="first-marquee">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>APIs</li>
-              <li>Styled components</li>
-              <li>Animation CSS</li>
-              <li>Responsive Web Design</li>
-              <li>UI/UX Design</li>
-              <li>Figma</li>
-              <li>Git and Github</li>
-            </ul>
-          </Marquee>
+          {/* <Marquee autoFill pauseOnClick> */}
+          <ul className="first-marquee">
+            <li>
+              <img src={reactLogo} />
+            </li>
+          </ul>
+          {/* </Marquee> */}
         </div>
       </section>
     </AboutSection>
@@ -84,7 +72,7 @@ const AboutSection = styled.section`
 
   .skills-section {
     padding: 0 3em;
-    max-width: 1040px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
