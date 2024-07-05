@@ -62,11 +62,26 @@ const AboutSection = styled.section`
     letter-spacing: 2px;
     text-transform: capitalize;
   }
+  button {
+    display: inline-block;
+    padding: 1em 1.8em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    transition: transform 0.4s ease-in-out;
+  }
 
-  button{
-    
-  } 
-  
+  button:hover {
+    transform: scale(1.1);
+  }
+
   .skills-section {
     padding: 0 3em;
     max-width: 1090px;
