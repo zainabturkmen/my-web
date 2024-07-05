@@ -1,19 +1,7 @@
 import React from "react";
 import image from "../assets/devImage.png";
 import styled from "styled-components";
-import reactLogo from "../assets/react.png";
-import node from "../assets/node.png";
-import htmlLogo from "../assets/html.png";
-import jsLogo from "../assets/js.png";
-import UXLogo from "../assets/UX.webp";
-import figmaLogo from "../assets/figma.png";
-import cssLogo from "../assets/CSS.webp";
-import gitLogo from "../assets/git.png";
-import githubLogo from "../assets/github.png";
-import vsCode from "../assets/vscode.png";
-import animate from "../assets/animation.png";
-import pnpm from "../assets/pnpm.png";
-
+import Images from "./Images";
 const About = () => {
   return (
     <AboutSection>
@@ -41,20 +29,7 @@ const About = () => {
       <section className="skills-section">
         <h2 className="skills">Skills & Tools</h2>
         <div className="scroller">
-          <ul className="first-marquee">
-            <img src={reactLogo} className="skill-logo" />
-            <img src={jsLogo} className="skill-logo" />
-            <img src={htmlLogo} className="skill-logo" />
-            <img src={cssLogo} className="skill-logo" />
-            <img src={node} className="skill-logo" />
-            <img src={UXLogo} className="skill-logo" />
-            <img src={figmaLogo} className="skill-logo" />
-            <img src={animate} className="skill-logo" />
-            <img src={gitLogo} className="skill-logo" />
-            <img src={githubLogo} className="skill-logo" />
-            <img src={vsCode} className="skill-logo" />
-            <img src={pnpm} className="skill-logo" />
-          </ul>
+            <Images />
         </div>
       </section>
     </AboutSection>
@@ -102,18 +77,22 @@ const AboutSection = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 3em;
+      column-gap: 3em;
+      row-gap: 1.5em;
       padding-block: 1rem;
       flex-wrap: wrap;
       margin-top: 1em;
     }
     .skill-logo {
-      width: 6em;
-      height: 6em;
+      height: 5.5em;
       object-fit: contain;
       border-radius: 10px;
       padding: 0.5em;
       box-shadow: none;
+      transition: transform 0.5s ease-in-out;
+    }
+    .skill-logo:hover {
+      transform: scale(1.1);
     }
   }
 
