@@ -1,9 +1,18 @@
 import React from "react";
 import image from "../assets/devImage.png";
 import styled from "styled-components";
-// import { FaHtml5 } from "react-icons/fa";
-import reactLogo from "../assets/react-logo.svg"
-import Marquee from "react-fast-marquee";
+import reactLogo from "../assets/react.png";
+import node from "../assets/node.png";
+import htmlLogo from "../assets/html.png";
+import jsLogo from "../assets/js.png";
+import UXLogo from "../assets/UX.webp";
+import figmaLogo from "../assets/figma.png";
+import cssLogo from "../assets/CSS.webp";
+import gitLogo from "../assets/git.png";
+import githubLogo from "../assets/github.png";
+import vsCode from "../assets/vscode.png";
+import animate from "../assets/animation.png";
+import pnpm from "../assets/pnpm.png";
 
 const About = () => {
   return (
@@ -32,13 +41,20 @@ const About = () => {
       <section className="skills-section">
         <h2 className="skills">Skills & Tools</h2>
         <div className="scroller">
-          {/* <Marquee autoFill pauseOnClick> */}
           <ul className="first-marquee">
-            <li>
-              <img src={reactLogo} />
-            </li>
+            <img src={reactLogo} className="skill-logo" />
+            <img src={jsLogo} className="skill-logo" />
+            <img src={htmlLogo} className="skill-logo" />
+            <img src={cssLogo} className="skill-logo" />
+            <img src={node} className="skill-logo" />
+            <img src={UXLogo} className="skill-logo" />
+            <img src={figmaLogo} className="skill-logo" />
+            <img src={animate} className="skill-logo" />
+            <img src={gitLogo} className="skill-logo" />
+            <img src={githubLogo} className="skill-logo" />
+            <img src={vsCode} className="skill-logo" />
+            <img src={pnpm} className="skill-logo" />
           </ul>
-          {/* </Marquee> */}
         </div>
       </section>
     </AboutSection>
@@ -72,8 +88,9 @@ const AboutSection = styled.section`
 
   .skills-section {
     padding: 0 3em;
-    max-width: 950px;
+    max-width: 1090px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .title-class {
@@ -85,22 +102,18 @@ const AboutSection = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1em;
+      gap: 3em;
       padding-block: 1rem;
       flex-wrap: wrap;
-      margin: 0;
+      margin-top: 1em;
     }
-
-    li {
-      list-style-type: none;
-      box-shadow: var(--bs);
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      font-size: 1.1em;
-      color: #000;
-      background-color: var(--clr-accent);
-      letter-spacing: 2px;
-      text-transform: capitalize;
+    .skill-logo {
+      width: 6em;
+      height: 6em;
+      object-fit: contain;
+      border-radius: 10px;
+      padding: 0.5em;
+      box-shadow: none;
     }
   }
 
@@ -140,13 +153,6 @@ const AboutSection = styled.section`
         p {
           text-align: start;
         }
-      }
-    }
-
-    .skills-section {
-      h2,
-      p {
-        text-align: start;
       }
     }
   }
