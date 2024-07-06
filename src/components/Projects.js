@@ -56,7 +56,7 @@ const Projects = () => {
             <h3>Comfy Store </h3>
             <p>
               This is the description for card 3. It has some interesting
-              content.
+              content
             </p>
             <div className="buttons">
               {/* <a href="#link1" className="btn">
