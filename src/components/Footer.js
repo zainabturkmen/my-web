@@ -4,27 +4,33 @@ import styled from "styled-components";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  const currentDate = new Date().toLocaleDateString();
+
   return (
     <FooterContainer>
       <div className="social-links">
         <a
-          href="www.linkedin.com/in/zainab-turkmen-719183271"
+          href="https://www.linkedin.com/in/yourprofile"
           target="_blank"
           rel="noopener noreferrer">
           <FaLinkedin />
         </a>
         <a
-          href="https://x.com/ZainabTurkmen"
+          href="https://twitter.com/yourprofile"
           target="_blank"
           rel="noopener noreferrer">
           <FaTwitter />
         </a>
         <a
-          href="https://github.com/zainabturkmen"
+          href="https://github.com/yourprofile"
           target="_blank"
           rel="noopener noreferrer">
           <FaGithub />
         </a>
+      </div>
+      <div className="date">
+        &copy; {currentYear} | {currentDate}
       </div>
     </FooterContainer>
   );
@@ -32,6 +38,7 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -41,7 +48,6 @@ const FooterContainer = styled.footer`
   margin-top: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
     padding: 15px;
   }
 
@@ -55,9 +61,14 @@ const FooterContainer = styled.footer`
       transition: color 0.3s;
 
       &:hover {
-        color: #007bff;
+        color: #69d1ee;
       }
     }
+  }
+
+  .date {
+    font-size: 14px;
+    color: #ccc;
   }
 `;
 
