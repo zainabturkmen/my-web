@@ -20,7 +20,7 @@ const Projects = () => {
             </p>
             <div className="buttons">
               <a href="#link1" className="btn">
-                Live link 
+                Live link
               </a>
               <a href="#link2" className="btn">
                 Code Link
@@ -43,7 +43,7 @@ const Projects = () => {
                 Live Link
               </a>
               <a href="#link2" className="btn">
-                 Code Link
+                Code Link
               </a>
             </div>
           </div>
@@ -54,14 +54,8 @@ const Projects = () => {
           </div>
           <div className="description">
             <h3>Comfy Store </h3>
-            <p>
-              This is the description for card 3. It has some interesting
-              
-            </p>
+            <p>This is the description for card 3. It has some interesting</p>
             <div className="buttons">
-              {/* <a href="#link1" className="btn">
-                Learn More
-              </a> */}
               <a href="#link2" className="btn">
                 Visit Full Design
               </a>
@@ -178,7 +172,7 @@ const Wrapper = styled.div`
 
         .btn {
           display: inline-block;
-          padding: .5em 1em;
+          padding: 0.5em 1em;
           border: none;
           border-radius: 5px;
           text-decoration: none;
@@ -186,7 +180,7 @@ const Wrapper = styled.div`
           background-color: #69d1ee;
           text-align: center;
           transition: background-color 0.3s;
-          font-size: .9em;
+          font-size: 0.9em;
 
           &:hover {
             background-color: var(--hover-color);
