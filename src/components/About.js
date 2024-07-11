@@ -112,9 +112,6 @@ const AboutSection = styled.section`
       box-shadow: none;
       transition: transform 0.5s ease-in-out;
     }
-    .skill-logo:hover {
-      transform: scale(1.1);
-    }
   }
 
   @media (min-width: 700px) {
