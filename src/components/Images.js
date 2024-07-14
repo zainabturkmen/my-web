@@ -16,7 +16,7 @@ import Marquee from "react-fast-marquee";
 const Images = () => {
   return (
     <ul className="first-marquee">
-      <Marquee autoFill>
+      <Marquee autoFill pauseOnClick>
         <img src={reactLogo} className="skill-logo" />
         <img src={jsLogo} className="skill-logo" />
         <img src={htmlLogo} className="skill-logo" />
@@ -24,7 +24,7 @@ const Images = () => {
         <img src={node} className="skill-logo" />
         <img src={UXLogo} className="skill-logo" />
       </Marquee>
-      <Marquee direction="right">
+      <Marquee direction="right" pauseOnClick autoFill>
         <img src={animate} className="skill-logo" />
         <img src={figmaLogo} className="skill-logo" />
         <img src={gitLogo} className="skill-logo" />
