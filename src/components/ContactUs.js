@@ -8,8 +8,8 @@ export const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_ikm6rfc", "template_5s3et7s", form.current, {
+        publicKey: "PTj-7AOYZYNkEZb6O",
       })
       .then(
         () => {
@@ -24,9 +24,9 @@ export const ContactUs = () => {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="from_name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="from_email" />
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
