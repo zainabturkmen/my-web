@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
           <div className="description">
             <h3>Comfy Store </h3>
-            <p>This is the description for card 3. It has some interesting</p>
+            <p>This is the description for card 3. It has some </p>
             <div className="buttons">
               <a href="#link2" className="btn">
                 Visit Full Design
