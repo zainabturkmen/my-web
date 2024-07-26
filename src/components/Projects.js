@@ -36,7 +36,7 @@ const Projects = () => {
             <h3>Card 2 Title</h3>
             <p>
               This is the  for card 2. It has some interesting
-              content.
+              .
             </p>
             <div className="buttons">
               <a href="#link1" className="btn">
