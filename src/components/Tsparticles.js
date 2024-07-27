@@ -5,19 +5,15 @@ import { loadFull } from "tsparticles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 export const Tsparticles = () => {
-  const particlesInit = async (main) => {
-    console.log(main);
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(main);
-  };
+    await loadSlim(engine);
+  }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
   return (
     <Particles
       id="tsparticles"
@@ -26,7 +22,7 @@ export const Tsparticles = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: -2,
+          zIndex: -1,
         },
         particles: {
           number: {
@@ -42,7 +38,7 @@ export const Tsparticles = () => {
           shape: {
             type: "star",
             options: {
-              sides: 5,
+              sides: 10,
             },
           },
           opacity: {
@@ -84,7 +80,7 @@ export const Tsparticles = () => {
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 10,
             direction: "none",
             random: false,
             straight: false,
@@ -145,5 +141,3 @@ export const Tsparticles = () => {
     />
   );
 };
-
-Tsparticles;
