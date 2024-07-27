@@ -14,6 +14,7 @@ export const Tsparticles = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
+    
   return (
     <Particles
       id="tsparticles"
@@ -80,7 +81,7 @@ export const Tsparticles = () => {
           },
           move: {
             enable: true,
-            speed: 10,
+            speed: 6,
             direction: "none",
             random: false,
             straight: false,
@@ -108,15 +109,15 @@ export const Tsparticles = () => {
             grab: {
               distance: 400,
               line_linked: {
-                opacity: 1,
+                opacity: 0.5,
               },
             },
             bubble: {
               distance: 400,
-              size: 40,
+              size: 50,
               duration: 2,
               opacity: 8,
-              speed: 3,
+              speed: 5,
             },
             repulse: {
               distance: 200,
