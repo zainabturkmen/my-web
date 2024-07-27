@@ -5,10 +5,12 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import { ContactUs } from "./components/ContactUs";
+import { Tsparticles } from "./components/Tsparticles";
 
 function App() {
   return (
     <div>
+      <Tsparticles />
       <Navbar />
       <Home />
       <Services />
