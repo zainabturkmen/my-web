@@ -1,7 +1,8 @@
 import React from "react";
-import image from "../assets/devImage.png";
+import animation from "../assets/animation.json";
 import styled from "styled-components";
 import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
+
 
 const Home = () => {
   const [typeEffect] = useTypewriter({
@@ -23,7 +24,11 @@ const Home = () => {
         </h3>
       </div>
       <p class="section__subtitle">front-end dev</p>
-      <img src={image} alt="a picture of Zainab Turkmen" class="intro__img" />
+      <img
+        src={animation}
+        alt="a picture of Zainab Turkmen"
+        class="intro__img"
+      />
     </HomeSection>
   );
 };
@@ -85,11 +90,11 @@ const HomeSection = styled.section`
       "img subtitle";
     grid-template-columns: min-content max-content;
 
-    h2{
+    h2 {
       font-size: 2.5em;
     }
 
-    h3{
+    h3 {
       font-size: 1.5em;
     }
     img {

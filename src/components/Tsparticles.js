@@ -14,7 +14,7 @@ export const Tsparticles = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
-    
+
   return (
     <Particles
       id="tsparticles"
@@ -76,19 +76,19 @@ export const Tsparticles = () => {
             enable: true,
             distance: 600,
             color: "#111",
-            opacity: 0.4,
+            opacity: 0.2,
             width: 2,
           },
           move: {
             enable: true,
-            speed: 6,
+            speed: 7,
             direction: "none",
             random: false,
             straight: false,
             out_mode: "out",
             attract: {
               enable: false,
-              rotateX: 600,
+              rotateX: 900,
               rotateY: 1200,
             },
           },
