@@ -2,7 +2,7 @@ import React from "react";
 import animation from "../assets/animation.json";
 import styled from "styled-components";
 import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
-
+import Lottie from "lottie-react";
 
 const Home = () => {
   const [typeEffect] = useTypewriter({
@@ -24,11 +24,7 @@ const Home = () => {
         </h3>
       </div>
       <p class="section__subtitle">front-end dev</p>
-      <img
-        src={animation}
-        alt="a picture of Zainab Turkmen"
-        class="intro__img"
-      />
+      <Lottie className="img" animationData={animation} />
     </HomeSection>
   );
 };
@@ -74,10 +70,10 @@ const HomeSection = styled.section`
     text-transform: capitalize;
   }
 
-  img {
+  .img {
     display: block;
     max-width: 100%;
-    box-shadow: var(--bs);
+    margin-top: -6em;
   }
 
   @media (min-width: 680px) {
@@ -97,11 +93,12 @@ const HomeSection = styled.section`
     h3 {
       font-size: 1.5em;
     }
-    img {
+    .img {
       grid-area: img;
-      min-width: 220px;
+      width: 500px;
       position: relative;
       z-index: 2;
+      padding-top: -2em;
     }
 
     .section__subtitle {

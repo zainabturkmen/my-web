@@ -1,7 +1,9 @@
 import React from "react";
-import image from "../assets/devImage.png";
+import animation from "../assets/animation.json";
 import styled from "styled-components";
 import Images from "./Images";
+import Lottie from "lottie-react";
+
 const About = () => {
   return (
     <AboutSection>
@@ -26,7 +28,8 @@ const About = () => {
             <button>Download CV</button>
           </p>
         </div>
-        <img src={image} alt="person's image" />
+        {/* <img src={image} alt="person's image" /> */}
+        <Lottie className="img" animationData={animation} />
       </div>
       <section className="skills-section">
         <h2 className="skills">Skills & Tools</h2>
@@ -46,10 +49,10 @@ const AboutSection = styled.section`
     text-align: center;
   }
 
-  img {
+  .img {
     display: block;
     max-width: 100%;
-    box-shadow: var(--bs);
+    /* box-shadow: var(--bs); */
   }
 
   .about-subtitle {
@@ -139,10 +142,12 @@ const AboutSection = styled.section`
         padding-right: calc(200px + 4em);
       }
 
-      img {
+      .img {
         grid-area: img;
         position: relative;
         z-index: 2;
+        min-width: 450px;
+        margin-left: -7em;
       }
 
       .skills-section {
