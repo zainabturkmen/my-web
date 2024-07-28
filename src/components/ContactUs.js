@@ -1,49 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-import animation from "../assets/animation.json";
 import Lottie from "lottie-react";
-
-export const ContactUs = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("service_ikm6rfc", "template_5s3et7s", form.current, {
-        publicKey: "PTj-7AOYZYNkEZb6O",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
-
-  return (
-    <Wrapper>
-      <div className="image-container">
-        <Lottie animationData={animation} />
-      </div>
-      <div className="form-container">
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="from_name" />
-          <label>Email</label>
-          <input type="email" name="from_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
-      </div>
-    </Wrapper>
-  );
-};
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import animation from "../assets/animation.json";
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,6 +47,8 @@ const Wrapper = styled.div`
   }
 
   label {
+    margin-top: 15px;
+    margin-bottom: 5px;
     width: 100%;
     text-align: left;
   }
@@ -126,3 +89,46 @@ const Wrapper = styled.div`
     }
   }
 `;
+
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_ikm6rfc", "template_5s3et7s", form.current, {
+        publicKey: "PTj-7AOYZYNkEZb6O",
+      })
+      .then(
+        () => {
+          toast.success("Email sent successfully!");
+          form.current.reset(); // Reset the form after successful submission
+        },
+        (error) => {
+          toast.error("Failed to send email. Please try again.");
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+  return (
+    <Wrapper>
+      <div className="image-container">
+        <Lottie animationData={animation} />
+      </div>
+      <div className="form-container">
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="from_name" />
+          <label>Email</label>
+          <input type="email" name="from_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <ToastContainer />
+    </Wrapper>
+  );
+};

@@ -6,6 +6,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import { ContactUs } from "./components/ContactUs";
 import { Tsparticles } from "./components/Tsparticles";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Projects />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
