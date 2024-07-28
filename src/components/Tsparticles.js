@@ -68,7 +68,7 @@ export const Tsparticles = () => {
             direction: "clockwise",
             animation: {
               enable: true,
-              speed: 5,
+              speed: 2,
               sync: false,
             },
           },
@@ -81,7 +81,7 @@ export const Tsparticles = () => {
           },
           move: {
             enable: true,
-            speed: 7,
+            speed: 2,
             direction: "none",
             random: false,
             straight: false,

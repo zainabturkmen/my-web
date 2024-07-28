@@ -73,7 +73,6 @@ const HomeSection = styled.section`
   .img {
     display: block;
     max-width: 100%;
-    margin-top: -6em;
   }
 
   @media (min-width: 680px) {
@@ -98,7 +97,7 @@ const HomeSection = styled.section`
       width: 500px;
       position: relative;
       z-index: 2;
-      padding-top: -2em;
+      margin-top: -6em;
     }
 
     .section__subtitle {
@@ -108,7 +107,7 @@ const HomeSection = styled.section`
       text-align: right;
       position: relative;
       left: -1.5em;
-      width: calc(100% + 1.5em);
+      width: calc(100% + 2em);
     }
   }
 `;
