@@ -28,7 +28,6 @@ const About = () => {
             <button>Download CV</button>
           </p>
         </div>
-        {/* <img src={image} alt="person's image" /> */}
         <Lottie className="img" animationData={animation} />
       </div>
       <section className="skills-section">
@@ -110,7 +109,7 @@ const AboutSection = styled.section`
     .skill-logo {
       height: 5.5em;
       object-fit: contain;
-      border-radius: 10px;
+      border-radius: 2em;
       padding: 0.5em;
       box-shadow: none;
       transition: transform 0.5s ease-in-out;

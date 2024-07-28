@@ -23,7 +23,7 @@ export const Tsparticles = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: -1,
+          zIndex: -2,
         },
         particles: {
           number: {
@@ -43,11 +43,11 @@ export const Tsparticles = () => {
             },
           },
           opacity: {
-            value: 0.8,
+            value: 0.1,
             random: false,
             anim: {
               enable: false,
-              speed: 1,
+              speed: 10,
               opacity_min: 0.1,
               sync: false,
             },
@@ -81,7 +81,7 @@ export const Tsparticles = () => {
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 1,
             direction: "none",
             random: false,
             straight: false,
@@ -109,14 +109,14 @@ export const Tsparticles = () => {
             grab: {
               distance: 400,
               line_linked: {
-                opacity: 0.5,
+                opacity: 0.1,
               },
             },
             bubble: {
               distance: 400,
               size: 50,
               duration: 2,
-              opacity: 8,
+              opacity: 2,
               speed: 5,
             },
             repulse: {

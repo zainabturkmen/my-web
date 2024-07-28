@@ -35,7 +35,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <div className="title">Contact Me</div>
       <div className="content">
         <div className="image-container">
