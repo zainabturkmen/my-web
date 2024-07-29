@@ -126,16 +126,22 @@ const Wrapper = styled.div`
           &.active,
           &:hover {
             color: #000; /* Change active and hover color */
-            background-color: #ddd; /* Change background color on hover */
+            background-color: #69d1ee; /* Change background color on hover */
           }
         }
       }
     }
   }
 
-  @media screen and (min-width: 700px) {
-    .sidebar {
-      display: none;
+  @media screen and (max-width: 700px) {
+    .menu-btn {
+      display: block;
+      color: blue;
+    }
+
+    ul {
+      display: block;
+      background-color: red;
     }
   }
 `;
