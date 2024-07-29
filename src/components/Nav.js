@@ -68,7 +68,7 @@ export  const Nav = () => {
 };
 
 const Wrapper = styled.div`
-margin-bottom: 5em;
+  margin-bottom: 5em;
   nav {
     position: fixed;
     top: 0;
@@ -112,6 +112,12 @@ margin-bottom: 5em;
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .sidebar {
+      display: none;
     }
   }
 `;
