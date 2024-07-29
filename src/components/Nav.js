@@ -106,7 +106,7 @@ const Wrapper = styled.div`
       padding: 0;
       gap: 20px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 700px) {
         flex-direction: column;
         gap: 10px;
       }
@@ -135,13 +135,8 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 700px) {
     .menu-btn {
-      display: block;
+      /* display: block; */
       color: blue;
-    }
-
-    ul {
-      display: block;
-      background-color: red;
     }
   }
 `;
