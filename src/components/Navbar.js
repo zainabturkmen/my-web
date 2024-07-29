@@ -69,6 +69,7 @@ const Wrapper = styled.header`
 
   nav {
     display: none;
+    transition: all 0.3s linear;
   }
 
   .logo-and-toggle-div {

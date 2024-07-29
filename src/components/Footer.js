@@ -42,7 +42,7 @@ const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   width: 100%;
   margin-top: 20px;
