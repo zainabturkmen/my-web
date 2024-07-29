@@ -23,8 +23,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
                   smooth={true}
                   offset={30}
                   duration={500}
-                  onClick={closeSidebar}
-                >
+                  onClick={closeSidebar}>
                   <span>{icon}</span> {text}
                 </Link>
               </li>
@@ -66,11 +65,15 @@ const SidebarContainer = styled.div`
     justify-content: space-between;
   }
 
+  aside {
+    transition: all 0.3s linear;
+  }
+
   .show-sidebar {
     transform: translate(0%);
     transition: transform 1s linear;
-
     z-index: 999;
+    transition: all 0.3s linear;
   }
 
   .close-btn {

@@ -16,8 +16,8 @@ const links = [
   },
   {
     id: 2,
-    text: "Services",
-    url: "Services",
+    text: "services",
+    url: "services",
     icon: <FaServer />,
   },
   {

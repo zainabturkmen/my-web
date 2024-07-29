@@ -7,7 +7,7 @@ import backImage from "../assets/backImage.png";
 
 const Services = () => {
   return (
-    <ServicesSection id="Services">
+    <ServicesSection id="services">
       <h2 class="section__title">What I do</h2>
       <div class="services">
         {ServicesData.map(({ id, title, text }) => (

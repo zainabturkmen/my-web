@@ -7,12 +7,14 @@ import Projects from "./components/Projects";
 import { ContactUs } from "./components/ContactUs";
 import { Tsparticles } from "./components/Tsparticles";
 import Footer from "./components/Footer";
+import {Nav} from "./components/Nav";
 
 function App() {
   return (
     <div>
+      <Nav />
       <Tsparticles />
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Services />
       <About />
