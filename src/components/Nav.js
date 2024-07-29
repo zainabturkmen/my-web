@@ -7,10 +7,21 @@ import {
   FaServicestack,
   FaProjectDiagram,
   FaEnvelope,
+  FaTimes,
+  FaBars,
 } from "react-icons/fa";
 
-export  const Nav = () => {
+export const Nav = () => {
   const [active, setActive] = useState("#home");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
 
   const handleNavClick = (id) => {
     setActive(`#${id}`);
@@ -21,6 +32,9 @@ export  const Nav = () => {
     <Wrapper>
       <nav>
         <ul>
+          <div className="menu-btn" onClick={toggleNavbar}>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </div>
           <li>
             <a
               href="#home"
@@ -81,6 +95,10 @@ const Wrapper = styled.div`
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
 
+    .menu-btn {
+      display: none;
+    }
+
     ul {
       display: flex;
       list-style: none;
@@ -121,4 +139,3 @@ const Wrapper = styled.div`
     }
   }
 `;
-
