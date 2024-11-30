@@ -6,11 +6,16 @@ import Lottie from "lottie-react";
 
 const Home = () => {
   const [typeEffect] = useTypewriter({
-    words: ["Web Developer", "Web designer", "React.js developer"],
+    words: [
+      "Frontend Web Developer",
+      "UI/UX Designer",
+      "React Developer",
+    ],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 90,
   });
+
   return (
     <HomeSection id="home">
       <div className="title">
