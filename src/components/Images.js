@@ -11,7 +11,7 @@ import githubLogo from "../assets/github.png";
 import vsCode from "../assets/vscode.png";
 import animate from "../assets/animation.png";
 import pnpm from "../assets/pnpm.png";
-                                                                                                                                                                                                                                        import Marquee from "react-fast-marquee";
+import Marquee from "react-fast-marquee";
 
 const Images = () => {
   return (
